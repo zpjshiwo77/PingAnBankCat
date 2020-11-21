@@ -5,4 +5,7 @@ var Stat = Laya.Stat;
 
 var BgPageX = 0, WindowW = 0;
 
-let BgmUrl = "https://cdn.dhteam.net/thermoFisher/audio/bgm.mp3";
+var BgmUrl = "https://cdn.dhteam.net/thermoFisher/audio/bgm.mp3";
+
+var awardDialog,illustratedDialog,indexPage,introDialog,inviteDialog,loadingPage,mainPage,rankDialog,ruleDialog,signinDialog,taskDialog;
+var TRF_TIME = 300;
