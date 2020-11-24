@@ -8,12 +8,15 @@ R 0BAE07A3 c1.png
 D images/illustrated
 R 13D17A10 cont.png
 P EE052280 mask.png
-D images/index
-P E5E97E5A b.png
-R 615077EF bg.jpg
-P FABD0248 cat.png
-P 8009BEB1 rule.png
-R 8C64F125 t.png
+D images/intimacy
+R B8EC28F9 0.png
+R E0C3F10E 1.png
+R 3F8DF87B 2.png
+R 79A108A7 3.png
+R 77E189EE 4.png
+R 746C9EF1 5.png
+R F91A2CB8 6.png
+R F010A406 7.png
 D images/intro
 P AA77E158 close.png
 P C662C3B2 d.png
@@ -24,6 +27,14 @@ P 7132DB19 c1.png
 P 824AAA71 c2.png
 P B0E40401 cat.png
 R CC99AE79 cont.png
+D images/levelup
+R 5721C5CE 1.png
+R 59B36CAA 2.png
+R 0C55CCF0 3.png
+R 2BDA9495 4.png
+R B77779A0 5.png
+R 960AF0DE 6.png
+R E1AC64DB 7.png
 D images/loading
 P DE74D308 bar.png
 R 64FCBBAA bg.jpg
@@ -43,11 +54,11 @@ P 294E8B5E 2.png
 P A95BFB1A 3.png
 R 3E3FA431 a.png
 R 1C9EE872 b.png
-R F18A60E2 cont.png
+R FCBFC573 cont.png
 P D6E80494 mask1.png
 P C7F88F89 mask2.png
 D images/rule
-R E3689439 rule.png
+R 3EE7F1C0 rule.png
 D images/signin
 R 69784290 cont.png
 P D561B015 sign.png

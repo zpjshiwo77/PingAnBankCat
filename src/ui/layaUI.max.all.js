@@ -51,29 +51,27 @@ var illustratedUI=(function(_super){
 		illustratedUI.uiView={"type":"Dialog","props":{"width":700,"height":600},"child":[{"type":"Image","props":{"y":2,"x":8,"skin":"images/illustrated/cont.png"}},{"type":"Image","props":{"y":170,"x":103,"var":"cat1","skin":"images/illustrated/mask.png","alpha":0}},{"type":"Image","props":{"y":170,"x":266,"var":"cat2","skin":"images/illustrated/mask.png","alpha":0}},{"type":"Image","props":{"y":170,"x":429,"var":"cat3","skin":"images/illustrated/mask.png","alpha":0}},{"type":"Sprite","props":{"y":0,"x":595,"width":98,"var":"closeBtn","height":75}},{"type":"Sprite","props":{"y":437,"x":141,"width":404,"var":"closeBtn2","height":86}}]};
 		return illustratedUI;
 	})(Dialog);
-var indexUI=(function(_super){
-		function indexUI(){
+var intimacyUI=(function(_super){
+		function intimacyUI(){
 			
-		    this.enterAni=null;
 		    this.cont=null;
-		    this.startBtn=null;
-		    this.ruleBtn=null;
+		    this.closeBtn=null;
 
-			indexUI.__super.call(this);
+			intimacyUI.__super.call(this);
 		}
 
-		CLASS$(indexUI,'ui.indexUI',_super);
-		var __proto__=indexUI.prototype;
+		CLASS$(intimacyUI,'ui.intimacyUI',_super);
+		var __proto__=intimacyUI.prototype;
 		__proto__.createChildren=function(){
 		    
 			laya.ui.Component.prototype.createChildren.call(this);
-			this.createView(indexUI.uiView);
+			this.createView(intimacyUI.uiView);
 
 		}
 
-		indexUI.uiView={"type":"View","props":{"width":750,"height":1624},"child":[{"type":"Image","props":{"y":0,"x":0,"width":750,"skin":"images/index/bg.jpg","height":1624}},{"type":"Box","props":{"y":96,"x":0,"width":750,"var":"cont","height":1155},"child":[{"type":"Image","props":{"y":765,"x":862,"skin":"images/index/cat.png","name":"cat"},"compId":8},{"type":"Box","props":{"y":8,"x":58,"alpha":0},"compId":10,"child":[{"type":"Image","props":{"y":1045,"x":129,"var":"startBtn","skin":"images/index/b.png"}},{"type":"Image","props":{"x":501,"var":"ruleBtn","skin":"images/index/rule.png"}},{"type":"Image","props":{"y":82,"skin":"images/index/t.png","name":"title"}}]}]}],"animations":[{"nodes":[{"target":8,"keyframes":{"y":[{"value":745,"tweenMethod":"linearNone","tween":true,"target":8,"key":"y","index":0},{"value":200,"tweenMethod":"linearNone","tween":true,"target":8,"key":"y","index":21},{"value":395,"tweenMethod":"linearNone","tween":true,"target":8,"key":"y","index":35}],"x":[{"value":960,"tweenMethod":"linearNone","tween":true,"target":8,"key":"x","index":0},{"value":403,"tweenMethod":"linearNone","tween":true,"target":8,"key":"x","index":21},{"value":177,"tweenMethod":"linearNone","tween":true,"target":8,"key":"x","index":35}],"alpha":[{"value":1,"tweenMethod":"linearNone","tween":true,"target":8,"key":"alpha","index":0}]}},{"target":10,"keyframes":{"alpha":[{"value":0,"tweenMethod":"linearNone","tween":true,"target":10,"key":"alpha","index":0},{"value":0,"tweenMethod":"linearNone","tween":true,"target":10,"key":"alpha","index":30},{"value":1,"tweenMethod":"linearNone","tween":true,"target":10,"key":"alpha","index":40}]}}],"name":"enterAni","id":1,"frameRate":24,"action":0}]};
-		return indexUI;
-	})(View);
+		intimacyUI.uiView={"type":"Dialog","props":{"width":683,"height":792},"child":[{"type":"Image","props":{"var":"cont","skin":"images/intimacy/0.png"}},{"type":"Sprite","props":{"y":-4,"x":585,"width":102,"var":"closeBtn","height":100}}]};
+		return intimacyUI;
+	})(Dialog);
 var introUI=(function(_super){
 		function introUI(){
 			
@@ -126,6 +124,28 @@ var inviteUI=(function(_super){
 
 		inviteUI.uiView={"type":"Dialog","props":{"width":700,"height":1000},"child":[{"type":"Box","props":{"y":34,"x":13,"var":"codeBox"},"child":[{"type":"Image","props":{"skin":"images/invite/cont.png"}},{"type":"Image","props":{"y":463,"x":237,"width":190,"var":"codeImg","skin":"images/invite/c.png","height":190}},{"type":"Image","props":{"y":271,"x":192,"skin":"images/invite/cat.png","name":"cat"}},{"type":"Sprite","props":{"y":-6,"x":587,"width":96,"var":"closeBtn","height":86}},{"type":"Sprite","props":{"y":764,"x":123,"width":426,"var":"shareBtn","height":102}}]},{"type":"Box","props":{"y":27,"x":18,"var":"inviteBox"},"child":[{"type":"Image","props":{"skin":"images/invite/c.png"}},{"type":"Panel","props":{"y":394,"x":48,"width":605,"var":"friendScroll","vScrollBarSkin":"images/task/vscroll.png","renderType":"render","height":398},"child":[{"type":"Box","props":{"y":0,"x":0,"width":583,"var":"friendBox"},"child":[{"type":"Sprite","props":{"y":0,"x":0,"width":583,"var":"block","height":80},"child":[{"type":"Image","props":{"y":19,"x":0,"skin":"images/invite/block.png"}},{"type":"Image","props":{"y":7,"x":51,"skin":"images/invite/c1.png","name":"circle"}},{"type":"Text","props":{"y":28,"x":46,"width":72,"text":"TOP1","name":"index","height":21,"fontSize":18,"font":"Microsoft YaHei","color":"#ffffff","bold":true,"align":"center"}},{"type":"Text","props":{"y":23,"x":126,"width":256,"text":"x1111111","name":"name","height":37,"fontSize":26,"font":"Microsoft YaHei","color":"#343434","bold":false}},{"type":"Text","props":{"y":28,"x":454,"wordWrap":true,"width":78,"text":"102","name":"score","height":21,"fontSize":18,"font":"Microsoft YaHei","color":"#ffffff","bold":false}}]}]}]},{"type":"Sprite","props":{"y":172,"x":455,"width":175,"var":"inviteBtn","height":66}},{"type":"Sprite","props":{"y":780,"x":130,"width":406,"var":"closeBtn2","height":96}}]}]};
 		return inviteUI;
+	})(Dialog);
+var levelupUI=(function(_super){
+		function levelupUI(){
+			
+		    this.cont=null;
+		    this.closeBtn=null;
+		    this.awardBtn=null;
+
+			levelupUI.__super.call(this);
+		}
+
+		CLASS$(levelupUI,'ui.levelupUI',_super);
+		var __proto__=levelupUI.prototype;
+		__proto__.createChildren=function(){
+		    
+			laya.ui.Component.prototype.createChildren.call(this);
+			this.createView(levelupUI.uiView);
+
+		}
+
+		levelupUI.uiView={"type":"Dialog","props":{"width":750,"height":867},"child":[{"type":"Image","props":{"y":0,"x":0,"var":"cont","skin":"images/levelup/1.png"}},{"type":"Sprite","props":{"y":135,"x":642,"width":86,"var":"closeBtn","height":75}},{"type":"Sprite","props":{"y":517,"x":176,"width":410,"var":"awardBtn","height":118}}]};
+		return levelupUI;
 	})(Dialog);
 var loadingUI=(function(_super){
 		function loadingUI(){
@@ -204,6 +224,7 @@ var mainUI=(function(_super){
 var rankUI=(function(_super){
 		function rankUI(){
 			
+		    this.ani1=null;
 		    this.rankScroll=null;
 		    this.ranks=null;
 		    this.block=null;
@@ -211,6 +232,7 @@ var rankUI=(function(_super){
 		    this.myName=null;
 		    this.myScore=null;
 		    this.myHead=null;
+		    this.award=null;
 
 			rankUI.__super.call(this);
 		}
@@ -225,7 +247,7 @@ var rankUI=(function(_super){
 
 		}
 
-		rankUI.uiView={"type":"Dialog","props":{"width":750,"height":1200},"child":[{"type":"Image","props":{"y":21,"x":37,"skin":"images/rank/cont.png","name":"bg"}},{"type":"Panel","props":{"y":200,"x":125,"width":544,"var":"rankScroll","vScrollBarSkin":"images/task/vscroll.png","renderType":"render","height":697},"child":[{"type":"Box","props":{"y":0,"x":0,"width":518,"var":"ranks"},"child":[{"type":"Sprite","props":{"width":518,"var":"block","height":86},"child":[{"type":"Image","props":{"skin":"images/rank/a.png"}},{"type":"Text","props":{"y":22,"x":15,"width":35,"text":"1","name":"index","height":34,"fontSize":30,"color":"#5b5859","align":"center"}},{"type":"Text","props":{"y":27,"x":131,"width":207,"text":"name","name":"name","height":33,"fontSize":24,"color":"#5b5859"}},{"type":"Text","props":{"y":32,"x":431,"width":70,"text":"0","name":"score","height":23,"fontSize":20,"color":"#ffffff"}},{"type":"Sprite","props":{"y":7,"x":62,"width":63,"name":"head","height":61}}]}]}]},{"type":"Text","props":{"y":983,"x":70,"width":59,"var":"myIndex","text":"1","height":46,"fontSize":45,"color":"#396599","align":"center"}},{"type":"Text","props":{"y":991,"x":239,"width":255,"var":"myName","text":"name","height":33,"fontSize":30,"color":"#5b5859"}},{"type":"Text","props":{"y":998,"x":589,"width":70,"var":"myScore","text":"0","name":"score","height":23,"fontSize":25,"color":"#ffffff"}},{"type":"Sprite","props":{"y":966,"x":146,"width":80,"var":"myHead","height":78}}]};
+		rankUI.uiView={"type":"Dialog","props":{"width":750,"height":1200},"child":[{"type":"Image","props":{"y":21,"x":37,"skin":"images/rank/cont.png","name":"bg"}},{"type":"Panel","props":{"y":200,"x":125,"width":544,"var":"rankScroll","vScrollBarSkin":"images/task/vscroll.png","renderType":"render","height":697},"child":[{"type":"Box","props":{"y":0,"x":0,"width":518,"var":"ranks"},"child":[{"type":"Sprite","props":{"width":518,"var":"block","height":86},"child":[{"type":"Image","props":{"skin":"images/rank/a.png"}},{"type":"Text","props":{"y":22,"x":15,"width":35,"text":"1","name":"index","height":34,"fontSize":30,"color":"#5b5859","align":"center"}},{"type":"Text","props":{"y":27,"x":131,"width":207,"text":"name","name":"name","height":33,"fontSize":24,"color":"#5b5859"}},{"type":"Text","props":{"y":32,"x":431,"width":70,"text":"0","name":"score","height":23,"fontSize":20,"color":"#ffffff"}},{"type":"Sprite","props":{"y":7,"x":62,"width":63,"name":"head","height":61}}]}]}]},{"type":"Text","props":{"y":983,"x":70,"width":59,"var":"myIndex","text":"1","height":46,"fontSize":45,"color":"#396599","align":"center"}},{"type":"Text","props":{"y":991,"x":239,"width":255,"var":"myName","text":"name","height":33,"fontSize":30,"color":"#5b5859"}},{"type":"Text","props":{"y":998,"x":589,"width":70,"var":"myScore","text":"0","name":"score","height":23,"fontSize":25,"color":"#ffffff"}},{"type":"Sprite","props":{"y":966,"x":146,"width":80,"var":"myHead","height":78}},{"type":"Sprite","props":{"y":127,"x":93,"width":560,"var":"award","height":30},"child":[{"type":"Text","props":{"text":"第一名可获得Apple iPhone11（A2223) 64GB 绿色1台、第二名可获得戴森(Dyson) 新一代吹风机*1、第三名可获得360扫地机器人C50*1","fontSize":20,"font":"Microsoft YaHei","color":"#fff"},"compId":21}]}],"animations":[{"nodes":[{"target":21,"keyframes":{"y":[{"value":0,"tweenMethod":"linearNone","tween":true,"target":21,"key":"y","index":0}],"x":[{"value":600,"tweenMethod":"linearNone","tween":true,"target":21,"key":"x","index":0},{"value":-1300,"tweenMethod":"linearNone","tween":true,"target":21,"key":"x","index":440}]}}],"name":"ani1","id":1,"frameRate":24,"action":2}]};
 		return rankUI;
 	})(Dialog);
 var ruleUI=(function(_super){
@@ -245,7 +267,7 @@ var ruleUI=(function(_super){
 
 		}
 
-		ruleUI.uiView={"type":"Dialog","props":{"width":700,"height":1100},"child":[{"type":"Image","props":{"y":13,"x":9,"skin":"images/rule/rule.png"}},{"type":"Sprite","props":{"y":958,"x":135,"width":419,"var":"closeBtn","height":102}}]};
+		ruleUI.uiView={"type":"Dialog","props":{"width":700,"height":1135},"child":[{"type":"Image","props":{"y":0,"x":9,"skin":"images/rule/rule.png"}},{"type":"Sprite","props":{"y":1006,"x":135,"width":419,"var":"closeBtn","height":102}}]};
 		return ruleUI;
 	})(Dialog);
 var signinUI=(function(_super){
