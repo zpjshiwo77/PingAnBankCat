@@ -1,4 +1,4 @@
-var mainPage = function () {
+var MainPage = function () {
     var _self = this;
     var page;
     var showFlag = false;
@@ -74,4 +74,4 @@ var mainPage = function () {
 
 }
 
-var mainPage = new mainPage();
+mainPage = new MainPage();

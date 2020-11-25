@@ -19,8 +19,9 @@ LayaInit();
 function loadUIInit() {
     CountPageSize();
     remUnitConverter(750);
+    loadingPage.init();
 
-    iBgm.init();
+    // iBgm.init();
 
     for (var i = 0; i < unpackImg.length; i++) {
         var item = { url: unpackImg[i], type: Loader.IMAGE };
@@ -34,7 +35,7 @@ function loadUIInit() {
  * 加载进度
  */
 function loadPerUpdate(num) {
-    iOutPage.setPer(num);
+    loadingPage.setPer(num);
 }
 
 /**
@@ -44,17 +45,17 @@ function loadComplete() {
     
     // DevelopTest();
 
-    if (typeof wx) {
-        wxUser.init({
-            shareInfo: {
-                title: "欧诗漫",
-                friend: "欢迎光临欧诗漫博物馆",
-                timeline: "欢迎光临欧诗漫博物馆",
-                link: "https://wechat.dhteam.net/osm/index.html",
-                image: "https://wechat.dhteam.net/osm/share.jpg",
-            }
-        });
-    }
+    // if (typeof wx) {
+    //     wxUser.init({
+    //         shareInfo: {
+    //             title: "云养猫",
+    //             friend: "云养猫",
+    //             timeline: "云养猫",
+    //             link: "https://wechat.dhteam.net/osm/index.html",
+    //             image: "https://wechat.dhteam.net/osm/share.jpg",
+    //         }
+    //     });
+    // }
 }
 
 /**
@@ -68,9 +69,9 @@ function DevelopTest() {
  * 计算页面size
  */
 function CountPageSize() {
-    if (Browser.clientWidth < Browser.clientHeight) WindowW = (750 / Browser.clientWidth) * Browser.clientHeight;
-    else WindowW = (750 / Browser.clientHeight) * Browser.clientWidth;
-    BgPageX = (WindowW - 1624) / 2;
+    if (Browser.clientWidth < Browser.clientHeight) WindowH = (750 / Browser.clientWidth) * Browser.clientHeight;
+    else WindowH = (750 / Browser.clientHeight) * Browser.clientWidth;
+    BgPageY = (WindowH - 1624) / 2;
 }
 
 /**

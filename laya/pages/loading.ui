@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":1,
-    "selecteID":2,
+    "selectedBox":4,
+    "selecteID":7,
     "props":{"width":750,"sceneColor":"#000000","sceneBg":"laya/views/loading.jpg","height":1624},
     "nodeParent":-1,
     "label":"View",
@@ -67,9 +67,9 @@
                 {
                     "x":30,
                     "type":"Sprite",
-                    "props":{"y":238,"x":144,"width":457,"var":"mask","height":19},
+                    "props":{"y":238,"x":144,"width":457,"var":"maskBox","height":19},
                     "nodeParent":4,
-                    "label":"Sprite(mask)",
+                    "label":"Sprite(maskBox)",
                     "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,

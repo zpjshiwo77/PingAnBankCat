@@ -1,8 +1,8 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":4,
-    "selecteID":58,
+    "selectedBox":36,
+    "selecteID":39,
     "props":{"width":750,"sceneColor":"#000000","sceneBg":"laya/views/main.jpg","height":1624},
     "nodeParent":-1,
     "label":"View",
@@ -188,20 +188,22 @@
                 {
                     "x":30,
                     "type":"Sprite",
-                    "props":{"y":890,"x":125,"width":450,"var":"cat2","height":400},
+                    "props":{"y":600,"x":70,"width":600,"var":"cat","height":700},
                     "nodeParent":4,
-                    "label":"Sprite(cat2)",
-                    "isOpen":false,
+                    "label":"Sprite(cat)",
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
-                    "compId":33,
+                    "compId":36,
                     "child":[
                         {
+                            "x":45,
                             "type":"Image",
-                            "props":{"y":244,"x":13,"skin":"images/main/seat.png","name":"seat"},
-                            "nodeParent":33,
+                            "props":{"y":540,"x":105,"skin":"images/main/seat.png","name":"seat"},
+                            "nodeParent":36,
                             "label":"Image(seat)",
+                            "isOpen":true,
                             "isDirectory":false,
                             "isAniNode":true,
                             "hasChild":false,
@@ -210,36 +212,6 @@
                                 ]
                         }],
                     "$HIDDEN":false
-                },
-                {
-                    "x":30,
-                    "type":"Sprite",
-                    "props":{"y":740,"x":125,"width":450,"var":"cat3","height":600},
-                    "nodeParent":4,
-                    "label":"Sprite(cat3)",
-                    "isOpen":true,
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":35,
-                    "child":[
-                        ],
-                    "$HIDDEN":true
-                },
-                {
-                    "x":30,
-                    "type":"Sprite",
-                    "props":{"y":656,"x":89,"width":500,"var":"cat4","height":650},
-                    "nodeParent":4,
-                    "label":"Sprite(cat4)",
-                    "isOpen":true,
-                    "isDirectory":false,
-                    "isAniNode":true,
-                    "hasChild":false,
-                    "compId":36,
-                    "child":[
-                        ],
-                    "$HIDDEN":true
                 },
                 {
                     "x":30,
@@ -336,7 +308,6 @@
                     "compId":58,
                     "child":[
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":433,"x":168,"skin":"images/main/h2.png","alpha":1},
                             "nodeParent":58,
@@ -349,7 +320,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":501,"x":253,"skin":"images/main/heart.png","alpha":0.2},
                             "nodeParent":58,
@@ -362,7 +332,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":505.7692307692308,"x":194.30769230769232,"skin":"images/main/h2.png","alpha":0.4444444444444444},
                             "nodeParent":58,
@@ -375,7 +344,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":550,"x":263,"skin":"images/main/h2.png","alpha":0},
                             "nodeParent":58,
@@ -388,7 +356,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":514.4285714285714,"x":238.14285714285714,"skin":"images/main/heart.png","alpha":0},
                             "nodeParent":58,
@@ -401,7 +368,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":455.1818181818182,"x":282.8181818181818,"skin":"images/main/heart.png","alpha":0.7272727272727273},
                             "nodeParent":58,
@@ -414,7 +380,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "props":{"y":454.14285714285717,"x":180.57142857142856,"skin":"images/main/h2.png","alpha":0.25},
                             "nodeParent":58,

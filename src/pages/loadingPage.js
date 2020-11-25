@@ -1,4 +1,4 @@
-var loadingPage = function () {
+var LoadingPage = function () {
     var _self = this;
     var page;
     var showFlag = false;
@@ -40,10 +40,18 @@ var loadingPage = function () {
     }
 
     /**
+     * 设置百分比
+     */
+    _self.setPer = function (num) {
+        page.per.x = 457 * num;
+        page.cat.x = 400 * num;
+    }
+
+    /**
      * 事件初始化
      */
     function eventInit() {
-        page.startBtn.on(Laya.Event.CLICK, this, function(){});
+        // page.startBtn.on(Laya.Event.CLICK, this, function(){});
     }
 
     /**
@@ -70,8 +78,12 @@ var loadingPage = function () {
         page = new loadingUI();
         Laya.stage.addChild(page);
         page.cont.y = (WindowH - page.cont.height) / 2;
+        let maskSp = new Laya.Sprite();
+        let maskRes = Laya.Loader.getRes("images/loading/bar.png");
+		maskSp.graphics.drawTexture(maskRes);
+        page.maskBox.mask = maskSp;
     }
 
 }
 
-var loadingPage = new loadingPage();
+loadingPage = new LoadingPage();
